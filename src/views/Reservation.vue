@@ -510,7 +510,7 @@ export default {
     const togglePopup = (trigger) => {
         popupTriggers.value[trigger] = ! popupTriggers.value[trigger];
     }
-    const imageUrl = new URL("../assets/", import.meta.url).href;
+    const imageUrl = new URL("../", import.meta.url).href;
 
 
 //payment form below

@@ -1,4 +1,4 @@
-import express, { response } from "express";
+import express from "express";
 
 import cors from "cors";
 
@@ -32,7 +32,7 @@ app.use(cookieParser());
 app.use(session({
     secret: 'some secret',
     cookie: { maxAge: 100*100*60*60*12,
-            secure: true,
+            secure: false,
         sameSite: "none"},
     saveUninitialized: false,
     resave: true,

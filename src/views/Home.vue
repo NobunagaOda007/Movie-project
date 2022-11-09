@@ -75,7 +75,7 @@ import router from '../router';
     },
     setup() {
       const carouselSlides = ['promo2.webp' , 'promo1.webp', 'promo3.jpeg'];
-      const imageUrl = new URL("../assets/", import.meta.url).href;
+      const imageUrl = new URL("../", import.meta.url).href;
       return { carouselSlides, imageUrl };
       },
   };
