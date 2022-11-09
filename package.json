@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "start": "node src/Backend/index.js &&  run build",
-    "heroku-prebuild": "cd src/Backend npm install"
+    "heroku-postbuild": "cd src/Backend npm install"
   },
   "dependencies": {
     "@vuelidate/core": "^2.0.0",
@@ -18,7 +18,14 @@
     "jquery": "^3.6.1",
     "requirejs": "^2.3.6",
     "vue": "^3.2.37",
-    "vue-router": "^4.1.3"
+    "vue-router": "^4.1.3",
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.1",
