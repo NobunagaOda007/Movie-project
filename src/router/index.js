@@ -10,7 +10,7 @@ import Reservations from '../views/Reservations.vue'
 
 const routes =[
 {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home,
 /*     meta: {

@@ -443,7 +443,7 @@ export default {
                 
                 const response = await axios.post('reserve',{seat:this.seat,Show_id:this.Show_id,carddata:this.carddata});
                 alert("Thank you for purchasing");
-                router.push('/');
+                router.push('/home');
             }catch(err){
                 console.log(err);
             }
