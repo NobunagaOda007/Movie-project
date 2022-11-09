@@ -13,17 +13,17 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+npm install && cd src/Backend npm install 
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+npm run dev && cd src/Backend nodemon index.js
 ```
 
 ### Compile and Minify for Production
 
 ```sh
-npm run build
+npm run start
 ```
