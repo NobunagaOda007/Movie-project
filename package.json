@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "start": "node src/Backend/index.js &&  run build",
-    "heroku-prebuild": "npm install"
+    "heroku-prebuild": "cd src/Backend npm install"
   },
   "dependencies": {
     "@vuelidate/core": "^2.0.0",
