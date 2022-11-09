@@ -12,9 +12,9 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-In Movie-project run npm install and in Movie-project/src/Backend run npm install
-in root run npm build
-in root run npm start which runs backend and frontend
+In Movie-project run npm install and in Movie-project/src/Backend run npm install.
+After that in root run npm build (already done).
+After that in root run npm start which runs backend and frontend.
 
 ```sh
 npm install && cd src/Backend npm install 
