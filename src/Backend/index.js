@@ -13,6 +13,12 @@ import db from "./config/database.js";
 
 import cookieParser from 'cookie-parser';
 
+import path from 'path';
+import {fileURLToPath} from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 
 const store = new session.MemoryStore();
@@ -277,13 +283,13 @@ app.post('/reserve',async (req,res) => {
 
 //handle production
 
-if(process.env.NODE_ENV === 'production'){
+// if(process.env.NODE_ENV === 'production'){
     //static folder
-    app.use(express.static(__dirname + '../../dist/'));
+    app.use(express.static(path.resolve('dist/')));
 
     //handle SPA
-    app.get(/.*/,(req,res) => res.sendFile(__dirname + '../../dist/index.html'));
-}
+    app.get(/.*/,(req,res) => res.sendFile(path.resolve('dist/index.html')));
+// }  C:\Users\LEO\Movie-project\dist\index.html
 
 const port = process.env.PORT || 5000;
 
